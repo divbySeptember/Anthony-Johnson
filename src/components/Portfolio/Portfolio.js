@@ -20,7 +20,7 @@ const Portfolio = () => {
                   <p>Feel free to visit the links above to visit each projects repositories.</p>
                 </header>
 
-                <Container>
+                {/* <Container>
                 <Row>
                   <Col xs={6} md={4}>
                     <Image src={clarify} rounded />
@@ -32,7 +32,7 @@ const Portfolio = () => {
                     <Image src="holder.js/171x180" thumbnail />
                   </Col>
                 </Row>
-              </Container>;
+              </Container>; */}
 
               </div>
 			

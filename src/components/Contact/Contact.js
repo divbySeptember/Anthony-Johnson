@@ -7,7 +7,7 @@ class Contact extends React.Component{
         return(
             <div className="Form-Section">
             <h1>Send Me A Message</h1>
-            <form>
+            <form name="Contact" netlify>
                 <FormGroup>
                 <Input 
                 className="Email-Input"
