@@ -1,0 +1,85 @@
+.heroText {
+    margin-top: 8%;
+   
+    h1{
+        color: #fff;
+        font-size: 4rem;
+    }
+    p{
+        padding: 0 20%;
+        text-align: center;
+        color: #fff;
+        margin: 50px 0;
+        font-size: 1.5rem;
+    }
+    .btn1{
+      padding: 12px 45px;
+      border: none;
+      background: rgb(3, 181, 201);
+      color: #fff;
+      font-size: 1.5rem;
+      margin: 20px 20px;
+      border-radius: 55px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      &:hover{
+        color: rgb(3, 181, 201);
+        background: #fff;
+      }
+    }
+
+    .btn2{
+      padding: 12px 38px;
+      background: none;
+      border: 2px solid rgb(3, 181, 201);
+      color: rgb(3, 181, 201);
+      font-size: 1.5rem;
+      margin: 20px 20px;
+      border-radius: 55px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      
+      &:hover{
+        color: #fff;
+        background: rgb(3, 181, 201);
+      }
+      
+    }
+    
+
+}
+
+
+
+
+.sog_banner-image {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .sog_header {
+    text-align: center;
+  }
+  // .sog_header-static-text {}
+  // .sog_header-dynamic-text {}
+  .sog_header-dynamic-text:after {
+    content: '|';
+    right: -.15em;
+    font-size: 1.2em;
+    font-weight: 300;
+    animation: blink-animation 1s steps(5, start) infinite;
+    -webkit-animation: blink-animation 1s steps(5, start) infinite;
+  }
+  @keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+  @-webkit-keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+  .sog_subheader {
+    text-align: center;
+  }

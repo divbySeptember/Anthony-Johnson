@@ -1,0 +1,47 @@
+.Form-Section{
+    height: 600px;
+    padding: 50px 0;
+    border-top: 2px dashed rgb(196, 196, 196);
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    
+
+    .Email-Input{
+        margin: 10px 0;
+        padding:30px 0;
+        border-radius: 10px;
+        border: 1px solid rgb(176, 174, 174);
+        width: 800px
+
+    }
+    .Msg-Input{
+        height: 150px;
+        margin: 20px 0;
+        border-radius: 10px;
+        border: 1px solid rgb(176, 174, 174);
+        width: 800px
+
+    }
+    .btn-input{
+        padding: 10px 20px;
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        border-radius: 10px;
+        border: none;
+        background: rgb(3, 181, 201);
+        color: #fff;
+        &:hover{
+            background: rgb(23, 23, 23);
+            color: rgb(3, 181, 201);
+        }
+
+    }
+
+
+}

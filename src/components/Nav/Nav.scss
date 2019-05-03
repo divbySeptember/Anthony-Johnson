@@ -1,0 +1,85 @@
+.navContainer{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 25px;
+    // z-index: 3;
+
+    .logoContainer{
+        padding: 5px 20px;
+        display: flex;
+        align-items: center;
+        z-index: 3;
+        i{
+            font-size: 4rem;
+            color:rgb(3, 181, 201);
+            animation: App-logo-spin infinite 7s linear;
+        }
+        h2{
+            font-size: 2rem;
+            font-family: 'Baloo Paaji', cursive;
+            margin-left: 20px;
+            margin-top:10px;
+            text-align: center;
+            color: #fff;
+            text-transform: uppercase;
+            span{
+                color: rgb(3, 181, 201);
+            }
+        }
+        h3{
+            margin-top: -10px;
+            font-size: .8rem;
+            letter-spacing: 2px;
+            text-align: center;
+            color: #fff;
+            text-transform: uppercase;
+        }
+        
+    }
+    .mainNav{
+        display: flex;
+        margin-top: 15px;
+        z-index: 3;
+
+        i{
+            color: #fff;
+            padding: 0 10px;
+            font-size: 1.8rem;
+            cursor: pointer;
+            &:hover{
+                color: rgb(3, 181, 201);
+            }
+        }
+    }
+        a{
+            padding: 0 20px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            &:hover{
+                color:rgb(3, 181, 201);
+            }
+        }
+
+        .line1{
+            width: 1px;
+            height: 25px;
+            border: .6px solid #fff;
+            margin: 0 40px;
+        }
+}
+
+
+
+
+
+@keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
