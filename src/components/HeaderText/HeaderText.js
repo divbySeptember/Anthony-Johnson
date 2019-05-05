@@ -136,8 +136,8 @@ class HeaderText extends React.Component{
             </ModalFooter>
             </Form>
             </Modal>
-                <button onClick={this.toggle}  className="btn1">Need a Wbsite { <i className="iconz" class="fas fa-arrow-circle-right"></i>} </button>
-                <button className="btn2">View my Resume {<i className="iconz" class="fas fa-arrow-circle-right"></i>} </button>
+                <button onClick={this.toggle}  className="btn1">Need a Website { <i className="iconz" class="fas fa-arrow-circle-right"></i>} </button>
+                <button className="btn2">View my Resume {<i className="iconz" class="fas fa-arrow-circle-down"></i>} </button>
             </div>
         </div>
         
