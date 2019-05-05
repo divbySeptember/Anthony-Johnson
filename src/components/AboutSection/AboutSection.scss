@@ -17,11 +17,15 @@
             color: #fff;
         }
     }
-    p{
+    .aboutText p{
+        
         padding: 20px 50px;
         // margin: 0 50px;
         font-size: 1.7rem;
-        margin-top: 30px;
+        margin-top: 10px;
+    }
+    .aboutText{
+        margin-top: -40px;
     }
     .imgBox{
         width: 400px;

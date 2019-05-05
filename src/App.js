@@ -16,13 +16,28 @@ class App extends Component {
       <div className="App">
         <header className="App-header"style={{zIndex: -1}} >
           <Nav />
-          <HeaderText style={{zIndex: 1}} />
+          <HeaderText 
+            style={{zIndex: 1}} 
+            title='Home'
+            subtitle={HeaderText}
+            dark={true}
+            id= "Home" />
         </header>
 
         
-        <AboutSection />
-        <Portfolio />
-        <Contact />
+        <AboutSection  />
+
+        <Portfolio 
+          title='Portfolio'
+          subtitle={Portfolio}
+          dark={true}
+          id= "Portfolio" />
+
+        <Contact 
+          title='Contact'
+          subtitle={Contact}
+          dark={true}
+          id= "Contact"/>
         <Footer />
       </div>
     );

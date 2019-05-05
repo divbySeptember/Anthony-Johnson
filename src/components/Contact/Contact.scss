@@ -10,11 +10,12 @@ form{
     justify-content: center;
     align-items: center;
     padding: 50px 0;
+   
     
 
     .Email-Input{
         margin: 10px 0;
-        padding:30px 0;
+        padding:30px 20px;
         border-radius: 10px;
         border: 1px solid rgb(176, 174, 174);
         width: 800px
@@ -23,6 +24,7 @@ form{
     .Msg-Input{
         height: 150px;
         margin: 20px 0;
+        padding:30px 20px;
         border-radius: 10px;
         border: 1px solid rgb(176, 174, 174);
         width: 800px

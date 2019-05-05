@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import React from 'react';
+import { Button, Form, FormGroup, Input} from 'reactstrap';
 import './Contact.scss'
 
 class Contact extends React.Component{
@@ -7,7 +7,7 @@ class Contact extends React.Component{
         return(
             <div className="Form-Section">
             <h1>Send Me A Message</h1>
-            <form name="Contact" netlify>
+            <Form data-netlify="true">
                 <FormGroup>
                 <Input 
                 className="Email-Input"
@@ -31,7 +31,7 @@ class Contact extends React.Component{
                 type="submit" 
                 > Submit
                 </Button>
-            </form>
+            </Form>
             
             
             </div>

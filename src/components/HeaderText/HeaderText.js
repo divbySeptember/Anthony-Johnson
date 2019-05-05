@@ -1,5 +1,9 @@
 import React from 'react'
 import './HeaderText.scss'
+import { Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import { Button, Form, FormGroup, Input} from 'reactstrap';
+
+
 
 
 
@@ -55,7 +59,33 @@ let TxtRotate = function(el, toRotate, period) {
     }
   };
 
-const HeaderText = () => {
+class HeaderText extends React.Component{
+  constructor(props) {
+    super(props);
+    this.state = {
+      modal: false,
+      backdrop: true
+    };
+
+    this.toggle = this.toggle.bind(this);
+    this.changeBackdrop = this.changeBackdrop.bind(this);
+  }
+
+  toggle() {
+    this.setState(prevState => ({
+      modal: !prevState.modal
+    }));
+  }
+
+  changeBackdrop(e) {
+    let value = e.target.value;
+    if (value !== 'static') {
+      value = JSON.parse(value);
+    }
+    this.setState({ backdrop: value });
+  }
+
+  render(){
     return (
         <div className="heroText" >
             <h1><span
@@ -64,12 +94,55 @@ const HeaderText = () => {
        data-rotate='[ "Full Stack Developer", "UX/UI Designer", "Forever Learning" ]'/></h1>
             <p>Based out of Tallahassee, FL. Specializing in Less/Scss/Sass, JavaScript, Es6, Reactjs, Nodejs, and more. If you are a business seeking a web presence or an employer looking to hire, you can get in touch with me Below.</p>
             <div className="btnLive">
-                <button className="btn1">Need a Wbsite { <i className="iconz" class="fas fa-arrow-circle-right"></i>} </button>
+            <Modal className="i1" isOpen={this.state.modal} toogle={this.toggle} >
+            <Form data-netlify="true">
+            <ModalHeader toggle={this.toggle}>Need A Website?</ModalHeader>
+            <ModalBody>
+              <FormGroup>
+                  <Input 
+                  className="f1"
+                  type="text"
+                  name="Name"
+                  placeholder="Full Name"
+                  />
+              </FormGroup>
+              <FormGroup>
+                  <Input 
+                  className="f1"
+                  type="text"
+                  name="Email"
+                  placeholder="Email Address"
+                  />
+              </FormGroup>
+              <FormGroup>
+                  <Input 
+                  className="f1"
+                  type="text"
+                  name="Phone"
+                  placeholder="Phone Number"
+                  />
+              </FormGroup>
+              <FormGroup>
+                  <Input 
+                  className="f1"
+                  type="textarea"
+                  name="Project"
+                  placeholder="Project Details"
+                  />
+              </FormGroup>
+            </ModalBody>
+            <ModalFooter>
+              <Button type="submit">Submit</Button>
+            </ModalFooter>
+            </Form>
+            </Modal>
+                <button onClick={this.toggle}  className="btn1">Need a Wbsite { <i className="iconz" class="fas fa-arrow-circle-right"></i>} </button>
                 <button className="btn2">View my Resume {<i className="iconz" class="fas fa-arrow-circle-right"></i>} </button>
             </div>
         </div>
         
     )
+  }
 }
 
 
